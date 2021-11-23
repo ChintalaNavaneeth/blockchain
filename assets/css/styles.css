@@ -438,8 +438,11 @@ button {
   grid-template-columns: repeat(4, 200px);
   gap: 1.5rem;
   padding-top: 1rem;
-
   overflow-x: auto;
+  scrollbar-width: none;
+}
+.trick__container::-webkit-scrollbar {
+  display: none;
 }
 
 .trick__content {
@@ -779,7 +782,7 @@ button {
 
   .category__container,
   .trick__container {
-    grid-template-columns: 0.8fr;
+    grid-template-columns: 1fr;
     justify-content: center;
   }
 }
